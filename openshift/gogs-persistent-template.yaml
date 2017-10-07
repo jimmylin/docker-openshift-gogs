@@ -232,7 +232,7 @@ objects:
     - name: "${GOGS_VERSION}"
       from:
         kind: DockerImage
-        name: docker.io/${GOGS_IMAGE}:${GOGS_VERSION}
+        name: ${GOGS_IMAGE}:${GOGS_VERSION}
       importPolicy: {}
       annotations:
         description: The Gogs git server docker image
